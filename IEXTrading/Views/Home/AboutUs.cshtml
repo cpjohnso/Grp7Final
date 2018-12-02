@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<h2>About Us</h2>
+
+<div>
+    <p>
+
+        <br />
+        Dominique - This project helped us to learn both skills to be successful in technology and in business in general. On the technology side,
+        this project taught us how to access APIs and create, edit, and delete items in databases. It also helped with giving us the opportunity to use LINQ
+        by creating queries to find certain data within the databases. On the business side it helped us learn to think about how the data is
+        used by end users as it is important to build technology that is useful to the end users. More specifically we learned to understand how stocks are
+        picked in the finance world and it had us think of how we would want the system to select stocks to buy.
+        <br />
+        <br />
+        Chris - This project taught me a lot about distributed information systems. I learned how apis are used to communicate data amongst distributed systems. My primary contribution was in the development of the News feature. In creating this feature I learned how to create a model, integrate the model into the dbContext frame, develop a function to pull data from an api, create a function that directed pulled api data into the Headline model and created a view to display the results of the controller function. Just integrating this function into the existing project really forced me to work through how the program runs. That was the value I found in this project. 
+        <br />
+        <br />
+        Carole - For this project, we were provided with a stock website template created with the Model-View-Controller (MVC) framework which we modified to add stock picking functionality. Below is an overview of the main tasks we undertook.
+        <br />
+        <br />
+        As a first step, we had to determine what information we needed for picking stocks.  In addition to researching websites on stock picking, we were able to get input from experienced stockbrokers.
+        <br />
+        <br />
+        Based on this research, we were able to narrow down what fields we needed to have available for our stock picking formula and we found an api which contained those fields: https://stock/market/collection/sector?collectionName=gainers. We modified the Company data model to retrieve and save the necessary fields from the stock api.
+        <br />
+        <br />
+        Currently, we have this api set to retrieving gainers.  Ideally, we would want to retrieve the universe of stocks to make our calculations.  This would involve recursively retrieving stocks from all ten sectors.
+        <br />
+        <br />
+        We had issues saving company records.  We tried several workarounds but currently our max number of records that can be saved is 30. 
+        <br />
+        <br />
+         Once we had the data stored, then we had to add new functions (actions) to the controller file using Language-Integrated Query (LINQ) functionality to incorporate the stock picking buy and sell logic and retrieve the relevant stocks.
+        <br />
+        <br />
+        We also created new views called Top5Picks.cshtml and Top5Sell.cshtml with the necessary format to display the results of the Top5picks and Top5Sell actions.
+        <br />
+        <br />
+        The project reinforced what we learned in regards to C# programming, HTML and CSS.  It also introduced us to working with the MVC framework and we had extensive practice using the Visual Studio IDE as well as github for collaborative work.
+        This was a good learning experience that provided us with a starting point for creating websites of our own in the future.
+        This type of project can always be refined further.  We tried to balance the work effort to make sure we met the main requirements of the project, which was to develop a stock picking strategy, within the time contraints we had.
+        <br />
+
+    </p>
+    <p>
+    </p>
+</div>
